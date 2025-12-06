@@ -9,17 +9,11 @@ site:
     light: winter # 主题的浅色模式
     dark: dracula # 主题的深色模式
     code: github-dark # 代码块的主题 https://shiki.style/themes
-  date_format: ddd MMM DD YYYY # 日期格式设置，支持自定义格式
+  date_format: YYYY-MM-DD # 日期格式设置，支持自定义格式
   blog: # 博客相关配置
     pageSize: 8 # 每页显示的文章数量
   banner:  
     images:  
-      # - "https://s2.loli.net/2025/01/25/PBvHFjr5yDu6t4a.webp"  
-      # - "https://s2.loli.net/2025/01/25/6bKcwHZigzlM4mJ.webp"  
-      # - "https://s2.loli.net/2025/01/25/H9WgEK6qNTcpFiS.webp"  
-      # - "https://s2.loli.net/2025/01/25/njNVtuUMzxs81RI.webp"  
-      # - "https://s2.loli.net/2025/01/25/tozsJ8QHAjFN3Mm.webp"  
-      # - "https://s2.loli.net/2025/01/25/Pm89OveZq7NWUxF.webp"  
       # - "https://s2.loli.net/2025/01/25/UCYKvc1ZhgPHB9m.webp"  
       # - "https://s2.loli.net/2025/01/25/JjpLOW8VSmufzlA.webp"  
     height: "60vh"
@@ -198,6 +192,10 @@ user:
       #   ariaLabel: Support my work # 图标的可访问性标签
       #   title: Support my work # 图标的悬浮标题
       #   svg: "ri:cup-line"
+      - href: "https://zayck-firefly.pages.dev/sponsor/"
+        ariaLabel: 支持博主
+        title: 支持博主
+        svg: "line-md:coffee"
       - href: "https://github.com/zayck"
         ariaLabel: Github
         title: Github

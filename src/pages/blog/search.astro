@@ -56,6 +56,29 @@ import { Icon } from "astro-icon/components";
           },
         });
 
+        // 处理搜索结果标题，移除不必要的站点名称
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (mutation.type === 'childList') {
+              const titles = document.querySelectorAll('.pagefind-ui__result-title');
+              titles.forEach((title) => {
+                const text = title.textContent || '';
+                // 移除 " - Zayck" 部分
+                title.textContent = text.replace(/ - Zayck$/, '');
+              });
+            }
+          });
+        });
+
+        // 观察搜索结果容器的变化
+        const searchContainer = document.querySelector('#pagefind-search');
+        if (searchContainer) {
+          observer.observe(searchContainer, {
+            childList: true,
+            subtree: true
+          });
+        }
+
         // If search param exists (e.g., search?q=astro), trigger search
         const query = params.get("q");
         if (query) {
