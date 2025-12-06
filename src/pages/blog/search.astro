@@ -60,8 +60,8 @@ import { Icon } from "astro-icon/components";
               const titles = document.querySelectorAll('.pagefind-ui__result-title');
               titles.forEach((title) => {
                 const text = title.textContent || '';
-                // 移除 " - Zayck" 部分
-                title.textContent = text.replace(/ - Zayck$/, '');
+                // 移除所有形式的博客名称后缀
+                title.textContent = text.replace(/ - Zayck'? Blog?$/, '');
               });
             }, 100);
           }
