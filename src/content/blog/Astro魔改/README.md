@@ -1,10 +1,16 @@
-<pre align="center">
-一个简洁、优雅、快速的静态博客模板！🚀 使用 Astro 开发。
-</pre>
-
-<div align="center">
-<img alt="Kael Logo" src="https://s1.vika.cn/space/2025/12/02/4967f95d7f9b4c9bae2368e9092796e8" width="280px">
-</div>
+---
+title: READ ME
+description: 这是一篇关于 Kael 博客的介绍和安装使用方法
+pubDate: 2025-12-06
+image: "https://zayck-img.pages.dev/file/来自新世界/1764992494906_ef5ff2f26abd1a4d7c07dd3e24d94a91.jpeg"
+categories:
+  - Astro魔改
+tags:
+  - Astro
+  - 博客
+  - mdx
+badge: Pin
+---
 
 
 [**🖥️ Kael Demo**](https://zayck-demo.pages.dev)
@@ -13,7 +19,7 @@
 
 ## 📷 预览
 
-![preview](https://s1.vika.cn/space/2025/12/02/7559170593c440c6a843cced5dd24c4a)
+![image.png](https://zayck-img.pages.dev/file/1765111758854_image.png)
 
 ## ✨ 特点
 

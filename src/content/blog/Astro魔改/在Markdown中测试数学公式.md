@@ -1,34 +1,35 @@
 ---
-title: Testing Mathematical Formulas in Markdown
-description: A demonstration of various mathematical formulas rendered using LaTeX within Markdown.
-pubDate: May 31 2025
+title: 在Markdown中测试数学公式
+description: 使用 LaTeX 在 Markdown 中渲染的各种数学公式的演示
+pubDate: 2025-12-06
+image: "https://zayck-img.pages.dev/file/来自新世界/1765114691546_be047417850215b770a5b774a4825cf6.jpeg"
 categories:
   - Astro魔改
 tags:
   - Markdown
+  - Astro
+  - 博客
   - LaTeX
-  - Mathematics
-badge: LaTeX
 ---
 
-This document serves as a test for rendering mathematical formulas in Markdown using `$$` delimiters.
+本文档用于测试在 Markdown 中使用 `$$` 符号渲染数学公式。
 
-## Basic Algebra
+## 基础代数
 
-Let's start with some fundamental algebraic expressions.
+让我们从一些基本的代数表达式开始。
 
-The quadratic formula is given by:
+二次方程的求根公式为:
 $$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 
-A simple linear equation:
+一个简单的线性方程:
 $$y = mx + c$$
 
-Expansion of a binomial square:
+二项式平方的展开:
 $$(a+b)^2 = a^2 + 2ab + b^2$$
 
 ---
 
-## Calculus
+## 微积分
 
 Here are some common expressions from calculus.
 
@@ -43,7 +44,7 @@ $$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}
 
 ---
 
-## Trigonometry
+## 三角函数
 
 Some basic trigonometric identities.
 
@@ -58,7 +59,7 @@ $$e^{i\theta} = \cos\theta + i\sin\theta$$
 
 ---
 
-## Statistics and Probability
+## 统计和概率
 
 Formulas commonly used in statistics and probability.
 
@@ -73,7 +74,7 @@ $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 
 ---
 
-## Linear Algebra
+## 线性代数
 
 Examples from linear algebra.
 
@@ -88,7 +89,7 @@ $$C = AB$$
 
 ---
 
-## Physics
+## 物理学
 
 A couple of well-known physics equations.
 

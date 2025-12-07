@@ -1,20 +1,21 @@
 ---
-title: "Markdown Style Guide"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jul 01 2024"
-image: /image/image3.png
+title: Markdown 样式指南
+description: 以下是一个在Astro中编写Markdown内容时可以使用的部分基本Markdown语法示例
+pubDate: 2025-12-05
+image: https://zayck-img.pages.dev/file/来自新世界/1765117838486_20131106134527_ezEve.thumb.1000_0.jpg
 categories:
   - Astro魔改
 tags:
+  - Astro
+  - 博客
   - Markdown
-badge: Markdown
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+以下是一个在 Astro 中编写 Markdown 内容时可以使用的部分基本 Markdown 语法示例。
 
-## Headings
+## 1.标题
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+以下HTML中的 `<h1>`—`<h6>` 元素表示六个级别的章节标题。`<h1>` 是最高级别，而 `<h6>` 是最低级别。
 
 # H1
 
@@ -28,61 +29,62 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ###### H6
 
-## Paragraph
+## 2.段落
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
-## Images
+## 3.图片
 
-#### Syntax
+#### 语法
+
 
 ```markdown
-![Alt text](./full/or/relative/path/of/image)
+![Alt text](https://zayck-img.pages.dev/file/来自新世界/1764985164363_BandiView_background-light.webp)
 ```
 
-#### Output
+#### 输出
 
-![blog placeholder](/logo.png)
+![Alt text](https://zayck-img.pages.dev/file/来自新世界/1764985164363_BandiView_background-light.webp)
 
-## Blockquotes
+## 4.块引用
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+块引用元素表示从另一来源引用的内容，可附带引用信息(该信息必须位于脚注或引用元素内)，并可能包含一些内嵌改动，如注释和缩写。
 
-### Blockquote without attribution
+### 4.1 无署名的引用
 
-#### Syntax
+#### 语法
 
 ```markdown
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 ```
 
-#### Output
+#### 输出
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
-### Blockquote with attribution
+### 4.2 有署名的引用
 
-#### Syntax
+#### 语法
 
 ```markdown
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
 ```
 
-#### Output
+#### 输出
 
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
 
 [^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 
-## Tables
+### 4.3 表格
 
-#### Syntax
+#### 语法
 
 ```markdown
 | Italics   | Bold     | Code   |
@@ -90,15 +92,15 @@ The blockquote element represents content that is quoted from another source, op
 | _italics_ | **bold** | `code` |
 ```
 
-#### Output
+#### 输出
 
 | Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
 
-## Code Blocks
+### 4.4 代码块
 
-#### Syntax
+#### 语法
 
 we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntac, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
 
@@ -133,7 +135,7 @@ int main()
 ```
 ````
 
-Output
+#### 输出
 
 ```cpp
 #include <bits/stdc++.h>
@@ -164,11 +166,9 @@ int main()
 }
 ```
 
-## List Types
+### 4.5 有序列表
 
-### Ordered List
-
-#### Syntax
+#### 语法
 
 ```markdown
 1. First item
@@ -176,15 +176,15 @@ int main()
 3. Third item
 ```
 
-#### Output
+#### 输出
 
 1. First item
 2. Second item
 3. Third item
 
-### Unordered List
+### 4.6 无序列表
 
-#### Syntax
+#### 语法
 
 ```markdown
 - List item
@@ -192,15 +192,15 @@ int main()
 - And another item
 ```
 
-#### Output
+#### 输出
 
 - List item
 - Another item
 - And another item
 
-### Nested list
+### 4.7 嵌套列表
 
-#### Syntax
+#### 语法
 
 ```markdown
 - Fruit
@@ -212,7 +212,7 @@ int main()
   - Cheese
 ```
 
-#### Output
+#### 输出
 
 - Fruit
   - Apple
@@ -222,9 +222,9 @@ int main()
   - Milk
   - Cheese
 
-## Other Elements
+### 4.8 其他
 
-#### Syntax
+#### 语法
 
 ```markdown
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
@@ -238,7 +238,7 @@ Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
 ```
 
-#### Output
+#### 输出
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
 
