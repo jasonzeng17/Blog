@@ -6,7 +6,6 @@ image: "https://zayck-img.pages.dev/file/1764992494906_ef5ff2f26abd1a4d7c07dd3e2
 categories:
   - Astro魔改
 tags:
-  - Kael
   - Astro
   - 博客
   - 评论

@@ -52,7 +52,7 @@ kbd {
 
 code {
   font-size: 0.875em;
-  background-color: oklch(var(--p) / 0.15) !important;
+  background-color: oklch(var(--p) / 0.05) !important;
   color: oklch(var(--p)) !important;
   padding: 0.25rem 0.375rem !important;
   border-radius: 0.375rem !important;
