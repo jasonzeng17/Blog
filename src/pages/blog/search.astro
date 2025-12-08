@@ -55,23 +55,14 @@ import { Icon } from "astro-icon/components";
             return term;
           },
           onResults: function() {
-            // 搜索结果加载完成后可以添加自定义处理
             console.log('Search results loaded');
           },
-          // Configure sorting and filters
-        sort: [{
-          field: "_relevance",
-          direction: "desc"
-        }],
-          // Force Pagefind to use the title metadata
-          filters: {
-            "title": {
-              label: "Title"
-            }
-          }
+          // Configure sorting
+          sort: [{
+            field: "_relevance",
+            direction: "desc"
+          }]
         });
-
-
 
         // If search param exists (e.g., search?q=astro), trigger search
         const query = params.get("q");
