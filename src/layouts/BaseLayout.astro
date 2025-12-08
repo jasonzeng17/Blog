@@ -125,7 +125,7 @@ const bannerSubtitle = pageConfig?.subtitle || "";
   <!-- 移除上边距，让Banner从顶部开始 -->
   <body
     class="flex flex-col min-h-screen"
-    {...isIndexed ? { "data-pagefind-body": true } : {}}
+    {...isIndexed && isPostPage ? { "data-pagefind-body": true } : {}}
   >
     <!-- Hidden Pagefind title metadata for search results -->
     {isPostPage && <h1 data-pagefind-meta="title" class="sr-only">{title}</h1>}
