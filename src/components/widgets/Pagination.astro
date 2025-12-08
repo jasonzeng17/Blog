@@ -8,7 +8,7 @@ import { t } from "@config";
 const { page, totalPages, pageLinks, baseUrl } = Astro.props as PaginationProps;
 ---
 
-<div class="flex justify-between items-center w-full gap-2 order-4" transition:name="pagination">
+<div class="flex justify-between items-center w-full gap-2 order-4" transition:name="pagination" data-pagefind-ignore>
   <PaginationArrow direction="prev" url={page.url.prev} label={t("label.prevPage")} />
   <div class="join">
     {
