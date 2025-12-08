@@ -268,12 +268,7 @@ const socialLinks = [
   // 直接在组件中定义事件监听器，不需要复杂的DOM加载检测
   // 因为组件使用了client:load指令，脚本会在组件加载时执行
   
-  // 简化的打赏按钮交互逻辑
-  const donateModal = document.getElementById('donate_modal');
-  if (donateModal) {
-    // 只保留通过按钮点击和背景点击关闭模态框的功能
-    donateModal.onmouseleave = null;
-  }
+  // 打赏按钮交互逻辑（模态框通过HTML属性控制）
   
   // 复制URL功能
   const copyButtons = [
@@ -391,12 +386,8 @@ const socialLinks = [
     }  
   }
 
-  // 页面加载完成后获取统计数据  
-  if (document.readyState === 'loading') {  
-    document.addEventListener('DOMContentLoaded', fetchPageViews);  
-  } else {  
-    fetchPageViews();  
-  }
+  // 获取统计数据（脚本使用is:inline，DOM已加载完成）
+  fetchPageViews();
 </script>  
 
 <style>  
