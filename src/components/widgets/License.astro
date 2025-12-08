@@ -11,13 +11,10 @@ const displayDate = pubDate ? dayjs(pubDate).format(DATE_FORMAT) : "";
 // 从 URL 中提取 slug  
 const slug = url ? url.toString().split('/').filter(Boolean).pop() : undefined;  
 
-// 获取文章的主要分类并转换为小写
-const mainCategory = categories && categories.length > 0 ? categories[0].toLowerCase() : '';
-
 // 生成完整的URL
 const getFullUrl = () => {
   if (!url) return '';
-  return url.includes('/blog/') ? url : `https://zayck.pages.dev/blog/${mainCategory}/${slug}`;
+  return url.includes('/blog/') ? url : `https://zayck.pages.dev/blog/${categories[0].toLowerCase()}/${slug}`;
 };
 
 const socialLinks = [  
