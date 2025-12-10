@@ -67,7 +67,7 @@ const sites = [{ name: "Kael Demo", url: "https://zayck-demo.pages.dev" }];
 
             <!-- 可复制的代码块 -->
             <div class="relative group mb-4">
-              <pre class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 overflow-x-auto text-sm"><code id="link-code">名称：Zayck' Blog
+              <pre class="bg-gray-100 dark:bg-gray-800 text-gray-800 rounded-lg p-4 overflow-x-auto text-sm"><code id="link-code">名称：Zayck' Blog
 网址：https://zayck.pages.dev
 头像（方）：https://zayck-img.pages.dev/file/1764984969206_logo.png
 头像（圆）：https://zayck-img.pages.dev/file/1765341096109_goat-r.png
@@ -106,16 +106,24 @@ const sites = [{ name: "Kael Demo", url: "https://zayck-demo.pages.dev" }];
     </Card>
 
     <!-- Comments Section -->
-    {commentsConfig?.enable && commentsConfig.type === "giscus" && commentsConfig.giscus && (
-      <section class="comments mt-6">
-        <Giscus {...commentsConfig.giscus} />
-      </section>
-    )}
-    {commentsConfig?.enable && commentsConfig.type === "waline" && commentsConfig.waline && (
-      <section class="comments mt-6">
-        <Waline {...commentsConfig.waline} />
-      </section>
-    )}
+    <Card class="mt-0">
+      <div class="p-4 sm:p-6">
+        <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+          <Icon name="lucide:message-circle" class="w-5 h-5 text-primary" />
+          <span>评论</span>
+        </h2>
+        {commentsConfig?.enable && commentsConfig.type === "giscus" && commentsConfig.giscus && (
+          <section class="comments">
+            <Giscus {...commentsConfig.giscus} />
+          </section>
+        )}
+        {commentsConfig?.enable && commentsConfig.type === "waline" && commentsConfig.waline && (
+          <section class="comments">
+            <Waline {...commentsConfig.waline} />
+          </section>
+        )}
+      </div>
+    </Card>
 
     <!-- 复制代码的JavaScript函数 -->
     <script is:inline>
