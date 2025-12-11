@@ -59,6 +59,18 @@
   --custom-page-bg: #110f16; /* 添加暗色主题背景色变量 */  
 }
 
+/* Global mouse cursor style */
+body {
+  cursor: url('/pointer.cur'), auto; /* 使用public目录下的pointer.cur作为默认光标 */
+}
+
+/* Link and interactive element cursor style */
+a, button, .btn, .btn-category, .btn-tag, .dropdown label, .dropdown summary, 
+.dropdown-content a, .dropdown-content button, .collapse-title, 
+[role="button"], .cursor-pointer {
+  cursor: url('/link.cur'), pointer !important; /* 使用public目录下的link.cur作为链接光标 */
+}
+
 /* Global styles with nesting support */
 html {
   @apply scroll-smooth;
