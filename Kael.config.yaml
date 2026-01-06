@@ -67,7 +67,7 @@ site:
 # 用户的个人信息
 user:
   name: Jason
-  site: "https://github.com/jasonzeng17" # Cloudflare 部署后再改成你的 pages.dev
+  site: "https://jasonblog.pages.dev" 
   avatar: /avatar.webp # 图片路径先不改
 
   sidebar:

@@ -14,7 +14,10 @@ const slug = url ? url.toString().split('/').filter(Boolean).pop() : undefined;
 // 生成完整的URL
 const getFullUrl = () => {
   if (!url) return '';
-  return url.includes('/blog/') ? url : `https://zayck.pages.dev/blog/${categories[0].toLowerCase()}/${slug}`;
+  if (url.includes('/blog/')) return url;
+  const base = (Astro?.site?.href ?? 'https://jasonblog.pages.dev').replace(/\/$/, '');
+  const cat = (categories?.[0] ?? 'blog').toLowerCase();
+  return `${base}/blog/${cat}/${slug}`;
 };
 
 const socialLinks = [  
