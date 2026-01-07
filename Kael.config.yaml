@@ -4,7 +4,7 @@
 site:
   tab: Jason
   title: Jason
-  description: 系统 · 高效 · 实用
+  description: 记录 · 探索 · 分享
   language: zh
   favicon: /goat.png
 
@@ -25,11 +25,11 @@ site:
   pages:
     home:
       title: "Jason's Blog"
-      subtitle: "系统 · 高效 · 实用"
+      subtitle: "记录 · 探索 · 分享"
       typewriterTexts:
-        - "系统 · 高效 · 实用"
-        - "软件 | 工具 | 效率 | 分享"
-        - "Keep building, keep learning."
+        - "记录 · 探索 · 分享"
+        - "记录｜日常｜灵感｜随笔"
+        - "Keep learning, keep thinking."
     about:
       title: "About Me"
       subtitle: "Hi, I'm Jason."
@@ -68,7 +68,7 @@ site:
 user:
   name: Jason
   site: "https://jasonblog.pages.dev" 
-  avatar: /avatar.webp # 图片路径先不改
+  avatar: /wechat-1.jpg 
 
   sidebar:
     social:
